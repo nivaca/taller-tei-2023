@@ -6,7 +6,7 @@
 - [Presentación](Taller01.pdf)
 - [Plantilla básica de TEI](https://raw.githubusercontent.com/nivaca/taller-tei-2023/main/assets/plantilla.xml)
 
-## Informaci adicional
+## Información adicional
 - [Documentación oficial para TEI P5](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html)
 - [Lou Burnard, *What Is the Text Encoding Initiative*](https://books.openedition.org/oep/426?lang=en)
 - [Lou Burnard, *¿Qué es la Iniciativa de Codificación de Textos?*](https://books.openedition.org/oep/15662)
