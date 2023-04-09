@@ -3,7 +3,7 @@
 
 Archivos y documentación para el taller.
 
-- [Plantilla básica de TEI](assets/plantilla.xml)
+- [Plantilla básica de TEI](https://raw.githubusercontent.com/nivaca/taller-tei-2023/main/assets/plantilla.xml)
 
 
 
