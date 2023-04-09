@@ -15,4 +15,4 @@
 - [Gabriel Calarco y Gimena del Río Riande, *Introducción a la publicación web de archivos TEI con CETEIcean*](https://programminghistorian.org/es/lecciones/publicar-archivos-tei-ceteicean)
 - [Susanna Allés Torrent, *Introducción a la Text Encoding Initiative*](https://tthub.io/aprende/introduccion-a-tei/)
 
-[© Nicolás Vaughan 2023](https://nicolasvaughan.org/)
+[© 2023 Nicolás Vaughan](https://nicolasvaughan.org/)
