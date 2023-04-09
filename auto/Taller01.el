@@ -52,6 +52,8 @@
     "TEI"
     "XML"
     "mydate")
+   (LaTeX-add-xcolor-definecolors
+    "Link")
    (LaTeX-add-xparse-macros
     '("\\NewDocumentCommand \\FrameImg { o m }" "FrameImg" " o m " "New")))
  :latex)

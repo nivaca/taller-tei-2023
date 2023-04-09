@@ -145,8 +145,16 @@ Numbers=OldStyle,
 
 \usepackage{minted}
 
+\definecolor{Link}{HTML}{408080}
 \usepackage{hyperref}
-
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=blue,
+  citecolor = black,      
+  urlcolor=Link,
+}
+\urlstyle{tt}
 % ====================================================
 
 
@@ -629,6 +637,21 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
           \url{https://marketplace.visualstudio.com/items?itemName=e-editiones.tei-publisher-vscode}
       \end{enumerate}
   \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Repositorio del taller}
+
+  \centering
+
+  \url{https://github.com/nivaca/taller-tei-2023}
+
+  \bigskip
+
+  Bajemos la plantilla básica de TEI.
+
+  
 \end{frame}
 
 \end{document}
