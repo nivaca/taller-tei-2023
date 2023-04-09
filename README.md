@@ -1,4 +1,4 @@
-# Taller TEI para la Universidad de los Andes
+# Taller de TEI para la Universidad de los Andes
 ## Abril 13 y 14 de 2023
 
 ## Archivos y documentación para el taller
