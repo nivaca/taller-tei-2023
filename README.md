@@ -3,4 +3,8 @@
 
 Archivos y documentación para el taller.
 
+- [Plantilla básica de TEI](assets/plantilla.xml)
+
+
+
 © Nicolás Vaughan 2023
