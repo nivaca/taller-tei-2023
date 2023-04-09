@@ -3,6 +3,7 @@
 
 Archivos y documentación para el taller.
 
+- [Presentación](Taller01.pdf)
 - [Plantilla básica de TEI](https://raw.githubusercontent.com/nivaca/taller-tei-2023/main/assets/plantilla.xml)
 
 
