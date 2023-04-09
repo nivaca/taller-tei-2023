@@ -149,9 +149,9 @@ Numbers=OldStyle,
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
-  linkcolor=blue,
-  filecolor=blue,
-  citecolor = black,      
+  linkcolor=Link,
+  filecolor=Link,
+  citecolor=black,      
   urlcolor=Link,
 }
 \urlstyle{tt}
@@ -653,6 +653,132 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 
   
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+  \begin{itemize}
+    \item \mintinline{xml}|<p>|: párrafos
+    \item \mintinline{xml}|<ab>|: bloques anónimos de texto
+    \item \mintinline{xml}|<q>|: texto entre comillas
+    \item \mintinline{xml}|<title>|: título de algún documento u obra
+    \item \mintinline{xml}|<name>|: elemento genérico de nombre de persona, institución, etc.
+    \item \mintinline{xml}|<persName>|: nombre de persona
+    \item \mintinline{xml}|<placeName>|: nombre de lugar
+    \item \mintinline{xml}|<date>|: fecha
+    \item \mintinline{xml}|<head>|: encabezado de una parte del texto
+    \item \mintinline{xml}|<list>|: lista
+      \begin{itemize}
+        \item \mintinline{xml}|<item>|: elemento en una lista
+      \end{itemize}
+    \item \mintinline{xml}|<cit>|: cita bibliográfica estructurada
+      \begin{itemize}
+        \item \mintinline{xml}|<quote>|: texto citado
+        \item \mintinline{xml}|<bibl>|: entrada bibliográfica
+      \end{itemize}
+    \item \mintinline{xml}|<ref>|: referencia interna o externa
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+
+  \textbf{\azul{Divisiones superiores del \mintinline{xml}|<text>|}}
+
+  \smallskip
+
+  \begin{itemize}
+    \item \mintinline{xml}|<frontmatter>|: contiene las páginas o información preliminar del documento (epígrafes, prólogos, introducciones, prefacios, etc.) 
+    \item \mintinline{xml}|<mainmatter>|: contiende el texto principal
+    \item \mintinline{xml}|<backmatter>|: contiene las partes finales (apéndices, índices, etc.)
+    \item \mintinline{xml}|<div>|: división estructural genérica del documento (puede usarse el atributo \texttt{@type} para indicar si es de una parte, capítulo, sección, etc. y el atributo \texttt{@n} para indicar el número en su serie)
+  \end{itemize}
+
+  \bigskip
+  
+  \textbf{\azul{Hitos}}
+
+  \smallskip
+
+  \begin{itemize}
+    \item \mintinline{xml}|<lb/>|: límite de línea
+    \item \mintinline{xml}|<pb/>|: límite de página
+    \item \mintinline{xml}|<cb/>|: límite de columna
+  \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+
+  \textbf{\azul{Correcciones e intervenciones editoriales}}
+
+  \smallskip
+
+  \begin{itemize}
+      
+    \item \mintinline{xml}|<add>|: texto añadido en el documento
+    \item \mintinline{xml}|<del>|: texto eliminado en el documento
+      \begin{itemize}
+        \item \mintinline{xml}|<subst>|: texto substituido en el documento (contiene un  \mintinline{xml}|<add>| y un  \mintinline{xml}|<del>|)
+      \end{itemize}
+    \item \mintinline{xml}|<sic>|: indica que el texto aparece tal cual en el documento, aunque el editor/codificador llama la atención sobre él
+    \item \mintinline{xml}|<corr>|: indica una corrección o intervención editorial
+      \begin{itemize}
+        \item \mintinline{xml}|<choice>|: puede contener una pareja \mintinline{xml}|<sic>| y \mintinline{xml}|<corr>| para indicar que van juntos
+      \end{itemize}
+    \item \mintinline{xml}|<abbr>|: indica una abreviatura en el documento
+    \item \mintinline{xml}|<expan>|: indica la expansión de una abreviatura en el documento
+       \begin{itemize}
+        \item \mintinline{xml}|<choice>|: puede contener una pareja \mintinline{xml}|<abbr>| y \mintinline{xml}|<expan>| para indicar que van juntos
+      \end{itemize}
+    \item \mintinline{xml}|<orig>|: indica que el texto aparece tal cual en el original
+    \item \mintinline{xml}|<reg>|: indica una normalización ortográfica
+      \begin{itemize}
+        \item \mintinline{xml}|<choice>|: puede contener una pareja \mintinline{xml}|<orig>| y \mintinline{xml}|<reg>| para indicar que van juntos
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+
+  \textbf{\azul{Correcciones e intervenciones editoriales}}
+
+  \smallskip
+
+  \begin{itemize}
+      
+    \item \mintinline{xml}|<unclear>|: indica que el texto es poco claro o ilegible (también se puede usar el atributo \texttt{@cert} para indicar el grado de certeza)
+    \item \mintinline{xml}|<gap>|: indica que hay una laguna en el texto (puede usar los atributos \texttt{@unit} para indicar la unidad de extensión (e.g. \texttt{caracteres}, \texttt{folios}) y \texttt{@extent} para indicar la cantidad)
+    \item[] E.g. \mintinline{xml}|<gap extent="2" unit="líneas"/>|
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+
+  \textbf{\azul{Otros elementos}}
+
+  \smallskip
+
+  \begin{itemize}
+      
+    \item \mintinline{xml}|<pc>|: puntuación 
+    \item \mintinline{xml}|<g>|: caracteres y glifos
+    \item \mintinline{xml}|<note>|: indica que el texto marcado es una nota (\texttt{@type} puede indicar si es marginal, a pie de página, etc.)
+    \item \mintinline{xml}|<seg>|: indica que el texto marcado es un segmento de otro elemento más grande.
+      \item[] E.g., 
+  \end{itemize}
+\end{frame}
+
+
 
 \end{document}
 
