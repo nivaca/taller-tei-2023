@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+cp}{\PYGZlt{}?xml\PYGZhy{}model href=\PYGZdq{}http://www.tei\PYGZhy{}c.org/release/xml/tei/custom/schema/}
-\PYG{c+cp}{  relaxng/tei\PYGZus{}all.rng\PYGZdq{} type=\PYGZdq{}application/xml\PYGZdq{}}
-\PYG{c+cp}{  schematypens=\PYGZdq{}http://relaxng.org/ns/structure/1.0\PYGZdq{}?\PYGZgt{}}
-\PYG{c+cp}{\PYGZlt{}?xml\PYGZhy{}model href=\PYGZdq{}http://www.tei\PYGZhy{}c.org/release/xml/tei/custom/schema/}
-\PYG{c+cp}{  relaxng/tei\PYGZus{}all.rng\PYGZdq{} type=\PYGZdq{}application/xml\PYGZdq{}}
-\PYG{c+cp}{  schematypens=\PYGZdq{}http://purl.oclc.org/dsdl/schematron\PYGZdq{}?\PYGZgt{}}
-\end{Verbatim}
