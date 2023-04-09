@@ -1,5 +1,5 @@
-# taller-tei-2023
-## Taller TEI para la Universidad de los Andes
+# Taller TEI para la Universidad de los Andes
+## Abril 13 y 14 de 2023
 
 ## Archivos y documentación para el taller
 
@@ -14,4 +14,4 @@
 - [Nicolás Vaughan, *Introducción a la codificación de textos en TEI (parte 2)*](https://programminghistorian.org/es/lecciones/introduccion-a-tei-2)
 - [Gabriel Calarco y Gimena del Río Riande, *Introducción a la publicación web de archivos TEI con CETEIcean*](https://programminghistorian.org/es/lecciones/publicar-archivos-tei-ceteicean)
 
-© Nicolás Vaughan 2023
+[© Nicolás Vaughan 2023](https://nicolasvaughan.org/)
