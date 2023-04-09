@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}?xml version=\PYGZdq{}1.0\PYGZdq{}?\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}catalog\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}book} \PYG{n+na}{id=}\PYG{l+s}{\PYGZdq{}bk101\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}author\PYGZgt{}}Gambardella, Matthew\PYG{n+nt}{\PYGZlt{}/author\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}title\PYGZgt{}}XML Developer\PYGZsq{}s Guide\PYG{n+nt}{\PYGZlt{}/title\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}genre\PYGZgt{}}Computer\PYG{n+nt}{\PYGZlt{}/genre\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}price\PYGZgt{}}44.95\PYG{n+nt}{\PYGZlt{}/price\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}publish\PYGZus{}date\PYGZgt{}}2000\PYGZhy{}10\PYGZhy{}01\PYG{n+nt}{\PYGZlt{}/publish\PYGZus{}date\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}description\PYGZgt{}}An in\PYGZhy{}depth look at creating applications
+      with XML.\PYG{n+nt}{\PYGZlt{}/description\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}/book\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}book} \PYG{n+na}{id=}\PYG{l+s}{\PYGZdq{}bk102\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}author\PYGZgt{}}Ralls, Kim\PYG{n+nt}{\PYGZlt{}/author\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}title\PYGZgt{}}Midnight Rain\PYG{n+nt}{\PYGZlt{}/title\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}genre\PYGZgt{}}Fantasy\PYG{n+nt}{\PYGZlt{}/genre\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}price\PYGZgt{}}5.95\PYG{n+nt}{\PYGZlt{}/price\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}publish\PYGZus{}date\PYGZgt{}}2000\PYGZhy{}12\PYGZhy{}16\PYG{n+nt}{\PYGZlt{}/publish\PYGZus{}date\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}description\PYGZgt{}}A former architect battles corporate zombies,
+      an evil sorceress, and her own childhood to become queen
+      of the world.\PYG{n+nt}{\PYGZlt{}/description\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}/book\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/catalog\PYGZgt{}}
+\end{Verbatim}

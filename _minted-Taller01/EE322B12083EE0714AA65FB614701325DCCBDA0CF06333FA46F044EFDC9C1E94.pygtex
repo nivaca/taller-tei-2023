@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}persName\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}forename\PYGZgt{}}William\PYG{n+nt}{\PYGZlt{}/forename\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}surname\PYGZgt{}}Shakespeare\PYG{n+nt}{\PYGZlt{}/surname\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/persName\PYGZgt{}}
+\end{Verbatim}
