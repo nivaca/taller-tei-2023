@@ -57,8 +57,8 @@ Numbers=OldStyle,
 % \usepackage[scaled=0.8]{DejaVuSans}
 \fi
 
-% \usetheme{Nivaca}
-\usetheme{Leuven}
+\usetheme{Nivaca}
+% \usetheme{Leuven}
 
 \usepackage{latexcolors}
 
@@ -96,46 +96,6 @@ Numbers=OldStyle,
 \end{frame}%
 \endgroup%
 }
-
-
-
-% \NewDocumentCommand \TFrameImg { o m }
-% {%
-% \begingroup
-% \setbeamercolor{background canvas}{bg=white}%
-% \setbeamertemplate{navigation symbols}{}%
-% \begin{frame}[plain]%
-%   \begin{tikzpicture}[overlay,remember picture]
-%     \node at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight, keepaspectratio]{img/#2}};
-%     \IfValueTF {#1}
-%     {\node[anchor=north east, fill=black!10] at (current page.north east){{\Azul\scriptsize#1}};}{}
-%   \end{tikzpicture}
-% \end{frame}%
-% \endgroup%
-% }
-
-% \usepackage{tcolorbox}
-% \tcbuselibrary{skins,hooks}
-% \tcbset{arc=2mm, colbacktitle=MidnightBlue, fonttitle=\bfseries, opacityfill=0.3, boxrule=.5pt, colback=Gainsboro, size=fbox}
-
-
-\setbeamertemplate{sections/subsections in toc}[sections numbered]
-
-% Add global transition effect \transfade
-\addtobeamertemplate{background canvas}{\transfade[duration=.5]}{}
-
-
-% \usepackage{enumitem}
-% \setitemize{label=\usebeamerfont*{itemize item}%
-%   \usebeamercolor[fg]{itemize item}
-%   \usebeamertemplate{itemize item}}
-% \setenumerate[1]{%
-%   label=\protect\usebeamerfont{enumerate item}%
-%   \protect\usebeamercolor[fg]{enumerate item}%
-%   \insertenumlabel.}
-% \setlist{noitemsep, nosep}
-% \setlist[description]{font=\itshape}
-
 
 
 \newcommand*{\elipsis}{\,.\,.\,.\,}
@@ -291,6 +251,21 @@ Universidad de los Andes \\
 % \end{frame}
 
 
+\begin{frame}
+  \frametitle{El marcado: ¿para qué?}
+  \begin{itemize}
+    \item Para poder \rojoit{representar} correctamente su contenido (en una pantalla, en un papel, etc.)
+    \item Para poder \rojoit{interpretar} correctamente su contenido
+  \end{itemize}
+
+  \bigskip
+
+  En cualquier caso, es importante que el marcado sea \textit{procesable por el computador} (\textit{machine-readable}).
+  
+\end{frame}
+
+
+
 \begin{frame}[fragile]
   \frametitle{Marcado representacional en \textsc{html}}
 
@@ -387,7 +362,7 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 \begin{frame}[fragile]
   \frametitle{\XML: algunas definiciones}
   \begin{enumerate}
-    \item \rojoit{Elementos} --- son los pilares estructurales de todo documento \XML.
+    \item \rojoit{Elementos} --- son los pilares estructurales de un documento \XML.
 
       Se componen de:
       \begin{itemize}
@@ -434,7 +409,7 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
       
     \item \rojoit{Padres, hijos, ancestros y descendientes}: si un elemento contiene otro elemento, el primero se denomina el \textit{padre}, y el segundo el \textit{hijo}. Un elemento puede tener muchos \textit{ancestros} y muchos \textit{descendientes}.
       
-    \item \rojoit{Declaración}: está al principio de todo documento \XML, identificándolo como tal: \mintinline{xml}|<?xml version="1.0" encoding="UTF-8"?>|
+    \item \rojoit{Declaración}: está al principio de un documento \XML, identificándolo como tal: \mintinline{xml}|<?xml version="1.0" encoding="UTF-8"?>|
   \end{enumerate}
 \end{frame}
 
@@ -463,11 +438,11 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 
 
 \begin{frame}[fragile]
-  \frametitle{Reglas fundamentales de todo documento \XML}
+  \frametitle{Reglas fundamentales de un documento \XML}
   \begin{enumerate}
     \item Todo documento \XML\ debe tener un único elemento raíz.
-    \item[] \verde{\textsc{correcto}:}
       \scriptsize
+    \item[] \verde{\textsc{correcto}:}
 \begin{minted}{xml}
 <biblio>
   <libro>
@@ -497,7 +472,7 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Reglas fundamentales de todo documento \XML}
+  \frametitle{Reglas fundamentales de un documento \XML}
   \begin{enumerate}
       \setcounter{enumi}{1}  
     \item Todo elemento empieza con una etiqueta de apertura y cierra con una etiqueta de cierre.
@@ -522,7 +497,7 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Reglas fundamentales de todo documento \XML}
+  \frametitle{Reglas fundamentales de un documento \XML}
   \begin{enumerate}
       \setcounter{enumi}{2}
     \item Todo elemento debe ser apropiadamente anidado.
@@ -577,7 +552,7 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 
 
 \begin{frame}[fragile]
-  \frametitle{Reglas fundamentales de todo documento \XML}
+  \frametitle{Reglas fundamentales de un documento \XML}
   \begin{enumerate}
       \setcounter{enumi}{4}
     \item Los espacios en blanco (caracteres de espacio, de tabulador y de salto de línea) \textit{no} son significativos. \XML\ suele tragarse los espacios múltiples.
@@ -609,11 +584,11 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 \begin{frame}[fragile]
   \frametitle{Validez sintáctica y semántica}
   \begin{itemize}
-    \item Un documento \XML\ es \textit{sintácticamente} válido si cumple con las reglas anteriores.
-    \item Un documento \XML\ es \textit{semánticamente} válido si cumple con las reglas de un esquema de validación.
+    \item Un documento \XML\ es \rojoit{sintácticamente} válido si cumple con las reglas anteriores.
+    \item Un documento \XML\ es \rojoit{semánticamente} válido si cumple con las reglas de un \textit{esquema de validación}.
       
       \begin{itemize}
-        \item Un documento \azul{\XML-\TEI} es semánticamente válido si cumple con las reglas prescritas por el consorcio \TEI\ sobre el tipo de elementos (y sus atributos) y las relaciones existentes entre ellos.
+        \item Para nuestro caso, un documento \azul{\XML-\TEI} es semánticamente válido si cumple con las reglas prescritas por el consorcio \TEI\ sobre el tipo de elementos (y sus atributos) y las relaciones existentes entre ellos.
         \item Por ejemplo, que la raíz de todo documento debe ser el elemento \mintinline{xml}|<TEI xmlns="http://www.tei-c.org/ns/1.0">|.
         \item Y que dicho elemento debe tener obligatoriamente dos elementos hijos: \mintinline{xml}|<teiHeader>| y \mintinline{xml}|<body>|.
         \item Y que el elemento \mintinline{xml}|<p>| puede tener algunos atributos (e.g. \texttt{ana, cert, copyOf,} etc.), pero no puede tener otros (e.g. \texttt{type}).
@@ -772,9 +747,8 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
       
     \item \mintinline{xml}|<pc>|: puntuación 
     \item \mintinline{xml}|<g>|: caracteres y glifos
-    \item \mintinline{xml}|<note>|: indica que el texto marcado es una nota (\texttt{@type} puede indicar si es marginal, a pie de página, etc.)
-    \item \mintinline{xml}|<seg>|: indica que el texto marcado es un segmento de otro elemento más grande.
-      \item[] E.g., 
+    \item \mintinline{xml}|<note>|: indica que el texto marcado es una nota (\texttt{@type} puede indicar si es marginal, a pie de página, etc.; \texttt{@place} puede indicar la ubicación: al margen, arriba, abajo, etc.)
+    \item \mintinline{xml}|<seg>|: indica que el texto marcado es un segmento de otro elemento más grande. 
   \end{itemize}
 \end{frame}
 
