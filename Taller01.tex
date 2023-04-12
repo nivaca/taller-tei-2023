@@ -601,6 +601,27 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 
 
 \begin{frame}
+  \frametitle{El flujo de trabajo}
+  \begin{enumerate}
+    \item La transcripción del documento (que puede ser manuscrito o impreso, en cuyo caso se puede usar \textsc{ocr})
+    \item Codificación en \TEI
+    \item Transformación del documento \TEI\ resultante para su procesamiento, análisis, reutilización, etc. 
+    \item[] Por ejemplo:
+      \begin{itemize}
+        \item \TEI\ $+$ \href{https://www.w3.org/TR/xslt/}{\textsc{xslt}} $\rightarrow$ \XML
+        \item \TEI\ $+$ \textsc{xslt} $\rightarrow$ \textsc{(x)html}
+        \item \TEI\ $+$ \textsc{xslt} $\rightarrow$ texto plano
+        \item \TEI\ $+$ \textsc{xslt} $\rightarrow$ \href{https://www.w3.org/TR/xsl11/\#fo-section}{\textsc{xsl-fo}}  $\rightarrow$ \textsc{pdf}
+        \item \TEI\ $+$ \textsc{xslt} $\rightarrow$ \href{https://www.latex-project.org/}{\LaTeX}  $\rightarrow$ \textsc{pdf}
+        \item \TEI\ $+$ \href{https://teipublisher.com}{TeiPublisher} $\rightarrow$ aplicación web
+        \item \TEI\ $+$ \href{https://github.com/TEIC/CETEIcean}{CETEIcean} $\rightarrow$ aplicación web
+        \item \TEI\ $+$ \href{https://www.w3.org/TR/xpath-31/}{XPath} o \href{http://www.w3.org/XML/Query/}{XQuery} $\rightarrow$ búsquedas estructuradas de información 
+        \item \dots
+      \end{itemize}
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
   \frametitle{Software que usaremos}
   \begin{itemize}
     \item El editor gratuito Visual Code Studio: \url{https://code.visualstudio.com/}
@@ -739,12 +760,32 @@ Por su parte, \azul{\XML\ ({\small\textit{Extensible Markup Language}})} es un l
 \begin{frame}
   \frametitle{Algunos elementos comunes de \TEI}
 
+  \textbf{\azul{Correspondencia}}\footnote{\url{https://tei-c.org/release/doc/tei-p5-doc/en/html/DS.html\#DSOC}}
+
+  \smallskip
+
+  \begin{itemize}
+    \item \mintinline{xml}|<stamp>|: contiene una descripción de un sello (\texttt{@type} puede especificar su tipo, e.g. \texttt{matasellos}, \texttt{estampilla}, etc.) 
+    \item \mintinline{xml}|<opener>|: contiene la apertura de la comunicación
+    \item \mintinline{xml}|<dateline>|: contiene una descripción breve del lugar, tiempo, etc. de la producción de la comunicación
+    \item \mintinline{xml}|<address>|: es un elemento grupo que contiene  varios elementos, como el genérico \mintinline{xml}|<addrLine>| (que contiene una línea de dirección), u otros más específicos como \mintinline{xml}|<street>| (la calle) o \mintinline{xml}|<postCode>| (el código postal) 
+    \item \mintinline{xml}|<closer>|: es un elemento grupo que contiene el cierre de comunicación (la despedida, la firma, etc.) 
+    \item \mintinline{xml}|<signed>|: la firma (i.e. el nombre del remitente) 
+  \end{itemize}
+
+  
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Algunos elementos comunes de \TEI}
+
   \textbf{\azul{Otros elementos}}
 
   \smallskip
 
   \begin{itemize}
-      
     \item \mintinline{xml}|<pc>|: puntuación 
     \item \mintinline{xml}|<g>|: caracteres y glifos
     \item \mintinline{xml}|<note>|: indica que el texto marcado es una nota (\texttt{@type} puede indicar si es marginal, a pie de página, etc.; \texttt{@place} puede indicar la ubicación: al margen, arriba, abajo, etc.)
