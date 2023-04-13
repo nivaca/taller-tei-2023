@@ -5,6 +5,7 @@
 
 - [Presentación](Taller01.pdf)
 - [Plantilla básica de TEI](https://raw.githubusercontent.com/nivaca/taller-tei-2023/main/assets/plantilla.xml)
+- [MSS. Marta Traba](https://raw.githubusercontent.com/nivaca/taller-tei-2023/main/assets/Marta%20Traba%20MSS.pdf)
 
 ## Información adicional
 - [Documentación oficial para TEI P5](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html)
