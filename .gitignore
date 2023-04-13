@@ -1,5 +1,6 @@
 _minted-Taller01/
 temp/
+.DS_Store
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
